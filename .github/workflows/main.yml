@@ -8,30 +8,14 @@ on:
   pull_request:
     branches: [ master ]
   workflow_dispatch:
-    
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: [windows-latest]
-    #runs-on: [windows-2019]
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+jobs:
+  build:
+    runs-on: windows-latest
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-      
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
-    
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.5
-    
-    - name: Restore NuGet packages
-      run: nuget restore WebFormsSiteForGitFramework472.sln
-    
-    - name: Build the Solution
-      run: msbuild WebFormsSiteForGitFramework472.sln /p:Configuration=Release /p:Platform=x64
-  #  - name: Build app for release
-  #    run: msbuild WebFormsSiteForGitFramework472.sln -t:rebuild -verbosity:diag -property:Configuration=Release /p:Platform="Any CPU"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+      - name: Build
+        run: dotnet build
+      - name: Run tests
+        run: dotnet test
