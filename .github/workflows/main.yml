@@ -29,8 +29,8 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
     
     - name: Restore NuGet packages
-      run: nuget restore WebForms.WebFormsSiteForGitFramework472.sln
+      run: nuget restore WebForms/WebFormsSiteForGitFramework472.sln
     
     - name: Build the Solution
-      run: msbuild WebForms.WebFormsSiteForGitFramework472.sln /p:Configuration=Release
+      run: msbuild WebForms/WebFormsSiteForGitFramework472.sln /p:Configuration=Release
     
