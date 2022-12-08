@@ -34,4 +34,4 @@ jobs:
   #  - name: Build the Solution
   #    run: msbuild WebFormsSiteForGitFramework472.sln /p:Configuration=Release
     - name: Build app for release
-      run: msbuild WebFormsSiteForGitFramework472.sln -t:rebuild -verbosity:diag -property:Configuration=Release /p:Platform="x86"
+      run: msbuild WebFormsSiteForGitFramework472.sln -t:rebuild -verbosity:diag -property:Configuration=Release /p:Platform="Any CPU"
