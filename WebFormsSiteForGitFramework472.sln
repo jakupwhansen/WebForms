@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFormsSiteForGitFramework472", "WebFormsSiteForGitFramework472\", "{E4795FB6-9814-4624-A5FE-4AE7EB0E7347}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63930"
+		Debug.AspNetCompiler.PhysicalPath = "WebFormsSiteForGitFramework472\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63930\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63930"
+		Release.AspNetCompiler.PhysicalPath = "WebFormsSiteForGitFramework472\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63930\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63930"
+		SlnRelativePath = "WebFormsSiteForGitFramework472\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4795FB6-9814-4624-A5FE-4AE7EB0E7347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4795FB6-9814-4624-A5FE-4AE7EB0E7347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3627647D-FCD0-4046-B702-1E88B36FC50B}
+	EndGlobalSection
+EndGlobal
