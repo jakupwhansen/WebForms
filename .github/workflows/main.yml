@@ -31,7 +31,7 @@ jobs:
     - name: Restore NuGet packages
       run: nuget restore WebFormsSiteForGitFramework472.sln
     
-  #  - name: Build the Solution
-  #    run: msbuild WebFormsSiteForGitFramework472.sln /p:Configuration=Release
-    - name: Build app for release
-      run: msbuild WebFormsSiteForGitFramework472.sln -t:rebuild -verbosity:diag -property:Configuration=Release /p:Platform="Any CPU"
+    - name: Build the Solution
+      run: msbuild WebFormsSiteForGitFramework472.sln /p:Configuration=Release /p:Platform=x64
+  #  - name: Build app for release
+  #    run: msbuild WebFormsSiteForGitFramework472.sln -t:rebuild -verbosity:diag -property:Configuration=Release /p:Platform="Any CPU"
